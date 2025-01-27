@@ -1,0 +1,3 @@
+This repository demonstrates a subtle bug in R related to data frame subsetting. When you attempt to subset a data frame using a character vector of column names, and one or more of those names are missing, R silently drops the missing columns instead of throwing an error.  This can lead to unexpected behavior and difficult-to-debug issues in your code.
+
+The `bug.r` file shows the problematic code.  The `bugSolution.r` file provides a solution that addresses this issue.
